@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Visible - Get Your Business Online</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .vanta-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Vanta.js Background -->
+    <div id="vanta-bg" class="vanta-bg"></div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i data-feather="globe" class="h-8 w-8 text-indigo-600"></i>
+                        <span class="ml-2 text-xl font-bold text-gray-800">Go Visible</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#" class="text-gray-800 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Home</a>
+                    <a href="#services" class="text-gray-800 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Services</a>
+                    <a href="#pricing" class="text-gray-800 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Pricing</a>
+<a href="#contact" class="bg-indigo-600 text-white px-6 py-2 rounded-lg hover:bg-indigo-700 transition duration-300">Get Started</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-gray-800 hover:text-indigo-600 focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="md:flex md:items-center md:justify-between">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Get Your Business Online Today</h1>
+                    <p class="text-xl mb-8 leading-relaxed">We create stunning, professional websites for local businesses that don't have an online presence yet. Be found by more customers!</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-medium text-center hover:bg-gray-100 transition duration-300">Get Your Website</a>
+                        <a href="#services" class="border-2 border-white text-white px-8 py-3 rounded-lg font-medium text-center hover:bg-white hover:bg-opacity-10 transition duration-300">Learn More</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="http://static.photos/technology/640x360/42" alt="Website on multiple devices" class="rounded-lg shadow-2xl max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Simple 3-Step Process</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We make getting online easy for busy business owners</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="edit-3" class="text-indigo-600 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">1. Quick Consultation</h3>
+                    <p class="text-gray-600">Tell us about your business in a quick call. We'll handle the tech stuff.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="layout" class="text-indigo-600 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">2. Website Design</h3>
+                    <p class="text-gray-600">We create a custom website that shows off your business perfectly.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg transition duration-300">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i data-feather="rocket" class="text-indigo-600 w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">3. Launch & Grow</h3>
+                    <p class="text-gray-600">We put your site online and help customers find you with basic SEO.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">What's Included</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Everything your business needs to get online</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <i data-feather="smartphone" class="text-indigo-600 w-6 h-6 mt-1 mr-3"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Mobile-Friendly Design</h3>
+                            <p class="text-gray-600">Looks great on phones, tablets and computers.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <i data-feather="search" class="text-indigo-600 w-6 h-6 mt-1 mr-3"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Basic SEO Setup</h3>
+                            <p class="text-gray-600">Help customers find you on Google.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <i data-feather="clock" class="text-indigo-600 w-6 h-6 mt-1 mr-3"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Fast Loading</h3>
+                            <p class="text-gray-600">No waiting around for your site to load.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <i data-feather="phone" class="text-indigo-600 w-6 h-6 mt-1 mr-3"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Click-to-Call</h3>
+                            <p class="text-gray-600">Customers can call you with one tap.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <i data-feather="map" class="text-indigo-600 w-6 h-6 mt-1 mr-3"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Google Maps</h3>
+                            <p class="text-gray-600">Show customers where to find you.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <i data-feather="refresh-cw" class="text-indigo-600 w-6 h-6 mt-1 mr-3"></i>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-800">Easy Updates</h3>
+                            <p class="text-gray-600">We'll update your site whenever you need.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-indigo-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Simple, Affordable Pricing</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">No hidden fees, just great websites at fair prices</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basic Plan -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Starter</h3>
+                        <p class="text-gray-600 mb-6">Perfect for small local businesses</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-indigo-600">$499</span>
+                            <span class="text-gray-600">one-time</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">5-Page Website</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">Mobile-Friendly</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">Basic SEO Setup</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">Contact Form</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="x" class="text-gray-400 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-400">Monthly Updates</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center bg-gray-100 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition duration-300">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Popular Plan -->
+                <div class="bg-white rounded-xl shadow-2xl transform scale-105">
+                    <div class="bg-indigo-600 text-white py-2 px-6 text-center">
+                        <span class="font-medium">MOST POPULAR</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Professional</h3>
+                        <p class="text-gray-600 mb-6">Perfect for growing businesses</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-indigo-600">$799</span>
+                            <span class="text-gray-600">one-time</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">8-Page Website</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">Mobile-Friendly</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">Advanced SEO</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">Photo Gallery</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">3 Monthly Updates</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition duration-300">Get Started</a>
+                    </div>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-2">Premium</h3>
+                        <p class="text-gray-600 mb-6">For businesses that want it all</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold text-indigo-600">$1,299</span>
+                            <span class="text-gray-600">one-time</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">12-Page Website</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">Mobile-Friendly</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">Premium SEO</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">Online Booking</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i data-feather="check" class="text-green-500 w-5 h-5 mr-2"></i>
+                                <span class="text-gray-700">Unlimited Updates</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center bg-gray-100 text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition duration-300">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- CTA Section -->
+    <section class="py-16 bg-indigo-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Get Your Business Online?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Don't let your competitors get all the online customers. Get your professional website today!</p>
+            <a href="#contact" class="bg-white text-indigo-600 px-8 py-3 rounded-lg font-medium inline-block hover:bg-gray-100 transition duration-300">Start Now - Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Let's Get Started</h2>
+                    <p class="text-gray-600 mb-8">Fill out the form and we'll get back to you within 24 hours to discuss your project. No pressure, no obligation.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 rounded-full p-3 mr-4">
+                                <i data-feather="mail" class="text-indigo-600 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Email Us</h4>
+                                <p class="text-gray-600">hello@govisible.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 rounded-full p-3 mr-4">
+                                <i data-feather="phone" class="text-indigo-600 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Call Us</h4>
+                                <p class="text-gray-600">(555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 rounded-full p-3 mr-4">
+                                <i data-feather="clock" class="text-indigo-600 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Hours</h4>
+                                <p class="text-gray-600">Monday - Friday: 9am - 6pm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <form>
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600 outline-none transition duration-300">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="business" class="block text-gray-700 font-medium mb-2">Business Name</label>
+                            <input type="text" id="business" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600 outline-none transition duration-300">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600 outline-none transition duration-300">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600 outline-none transition duration-300">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Tell Us About Your Business</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-600 focus:border-indigo-600 outline-none transition duration-300"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-indigo-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-indigo-700 transition duration-300">Get My Free Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i data-feather="globe" class="h-6 w-6 text-indigo-400"></i>
+                        <span class="ml-2 text-xl font-bold">Go Visible</span>
+                    </div>
+                    <p class="text-gray-400">Helping local businesses get online and grow since 2023.</p>
+                    <div class="flex space-x-4 mt-6">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="facebook"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i data-feather="linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#pricing" class="text-gray-400 hover:text-white transition duration-300">Pricing</a></li>
+<li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Website Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">SEO Optimization</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Mobile Optimization</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Website Maintenance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Terms of Service</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Go Visible. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Vanta.js
+        VANTA.GLOBE({
+            el: "#vanta-bg",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x5b6ee1,
+            backgroundColor: 0xffffff,
+            size: 1.00
+        });
+        
+        // Initialize feather icons
+        feather.replace();
+    </script>
+</body>
+</html>
